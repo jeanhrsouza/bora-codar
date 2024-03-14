@@ -7,9 +7,64 @@
 }
 
 :root {
-  font-size: 62.5%;
+  font-size: 62.5%; /*10px*/
+  font-family: "Inter", sans-serif;
 }
 
 body {
   font-size: 1.6rem;
+  background-color: #7C3AED;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+
+  min-height: 100vh;
+}
+
+main .inner {
+  height: 100%;
+  background-color: #FBFAFF;
+  border-top-left-radius: 32px; /*borda lateral*/
+}
+
+main {
+  padding-top: 0.8rem;
+}
+
+nav {
+  padding: 3.2rem 2.7rem 0 3.5rem;
+}
+
+ul {
+  margin-top: 6rem; /*margem da logo*/
+  list-style: none; /*removendo estilo da lista*/
+  min-width: 11.5rem; /*largura minima menu*/
+  display: grid;
+  gap: 3.6rem;
+}
+
+li a{
+  color: #cab3ff;
+
+  display: flex; /*alinhamento do elemento*/
+  align-items: center;
+  gap: 1.6rem;
+
+  font-weight: 500;
+}
+
+a.active,
+a:hover {
+  color: white;
+  font-weight: 700;
+}
+
+a ion-icon {
+  font-size: 2rem;
 }
